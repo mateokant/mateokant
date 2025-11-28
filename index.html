@@ -53,33 +53,24 @@
       z-index: 4;
     }
 
-    /* CSU Logo */
-    .logo-banner {
-      position: absolute;
-      top: 30px;
-      left: 1.5rem;
-      z-index: 5;
-    }
+/* Gemeinsamer Container für beide Logos */
+.logo-banner {
+  position: absolute;
+  top: 30px;
+  left: 1.5rem;
+  z-index: 5;
 
-    .logo-banner img {
-      height: 54px;
-      width: auto;
-      display: block;
-    }
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;    /* Abstand zwischen den beiden Logos */
+}
 
-        /* JU Logo */
-    .logov-banner {
-      position: absolute;
-      top: 30px;
-      left: calc(1.5rem +155px);
-      z-index: 5;
-    }
-
-    .logov-banner img {
-      height: 54px;
-      width: auto;
-      display: block;
-    }
+/* beide Logos gleich hoch */
+.logo-banner img {
+  height: 54px;
+  width: auto;
+  display: block;
+}
 
     /* Instagram Icon */
     .social-icons {
@@ -309,15 +300,10 @@
 
   <div class="hero">
 
-    <!-- CSU Logo -->
-    <div class="logo-banner">
-      <img src="csu.png" alt="CSU Logo">
-    </div>
-
-        <!-- JU Logo -->
-    <div class="logov-banner">
-      <img src="JUVat.png" alt="JU Logo">
-    </div>
+<div class="logo-banner">
+  <img src="csu.png" alt="CSU Logo" class="logo-csu">
+  <img src="logov.png" alt="JU Logo" class="logo-v">
+</div>
 
     <!-- Instagram Icon -->
     <div class="social-icons">
